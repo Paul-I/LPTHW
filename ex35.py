@@ -5,14 +5,13 @@ def gold_room():
     choice = raw_input("> ")
 
     if "0" in choice or "1" in choice:
-    elif how_much = int(choice):
+        how_much = int(choice)
     else:
-     dead("Man, learn to type a number.)
+        dead ("Man, learn to type a number.")
 
     if how_much <50:
         print "Nice, you're not greedy, you win!"
-    elif exit(0):
-
+        exit(0)
     else:
         dead("You greedy bastard!")
 
@@ -30,12 +29,9 @@ def bear_room():
         if choice == "take honey"
             dead("The bear looks at you then slaps your face off.")
         elif choice == "taunt bear" and not bear_moved:
-
-        else:
             print "The bear has moved from the door. You can go through it now."
             bear_moved = True
-
-         if choice == "taunt bear" and bear_moved:
+        elif choice == "taunt bear" and bear_moved:
             dead ("The bear get pissed off and chews your leg off.")
         elif choice == "open door" and bear_moved:
             gold_room()
